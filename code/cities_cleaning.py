@@ -11,6 +11,11 @@ for month in range(1,13):
     month_n = str(month)
     df[f'avg_temp_month_{month_n}'] = df['avg_temp_monthly_ser'].apply(lambda x: x[month_n]['avg'])
 
+# replace wrongly categorized data entry
+df['country'] = df['country'].replace({
+    'Quebec':'Canada'
+})
+
 # clean useless columns
 df_cleaned = df.drop(columns = ['avg_temp_monthly_ser', 'avg_temp_monthly'])
 
