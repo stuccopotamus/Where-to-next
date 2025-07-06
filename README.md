@@ -1,12 +1,5 @@
 # Where to next
 
-<table>
-  <tr>
-    <td><img src="tableau/overview.jpg" alt="PCA Overview" width="400"/></td>
-    <td><img src="tableau/destination_breakdown.jpg" alt="Top & Bottom Cities" width="400"/></td>
-  </tr>
-</table>
-
 ## A Travel Destination Analysis
 
 Picking the right travel destination is a tough process that involves balancing multiple different factors. 
