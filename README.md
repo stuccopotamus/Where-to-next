@@ -36,12 +36,10 @@ Python scripts were used for data wrangling and PCA transformation.
 
 ### Data Structure
 
-The final dataset includes the following fields:
-	•	city, country
-	•	avg_budget_per_day
-	•	avg_rating
-	•	climate_score (normalized for temperature range and precipitation)
-	•	pca_1, pca_2, pca_score_total
+The final dataset is stuctured as follows:
+  <img src="db_cities.pdf" alt="3pt Shooting Trend" width="400">
+
+
 
 ### Data Visualization
 
