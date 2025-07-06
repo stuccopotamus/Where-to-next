@@ -37,7 +37,8 @@ Python scripts were used for data wrangling and PCA transformation.
 ### Data Structure
 
 The final dataset is stuctured as follows:
-  <img src="db_cities.pdf" alt="3pt Shooting Trend" width="400">
+
+  <img src="pictures/db_cities.jpg" alt="db_cities" width="500">
 
 
 
