@@ -3,11 +3,13 @@
 ## A Travel Destination Analysis
 
 Picking the right travel destination is a tough process that involves balancing multiple different factors. 
+
 This project uses Principal Component Analysis (PCA) and data visualisation to objectively rank over 500 global cities using three essential travel criteria:
 - Budget – average cost for the trip
 - Climate – average temperature over the year
 - Ratings – traveler satisfaction scores across multiple categories
-PCA reduces this multi-dimensional data into a simpler form, in oder to statistically rank cities through a balance of all factors. 
+
+PCA reduces this multi-dimensional dataset into two quantifiable variables, in order to statistically rank cities through a balance of all factors. 
 
 
 ## Data Overview
@@ -88,6 +90,6 @@ The PCA transformation revealed clear patterns among global travel destinations:
 
 
 ## Assumptions and Caveats
-- 3-Factor PCA is useful, but to get a bigger picture with more exhaustive results, more categories are needed.
+- 3-Factor PCA is useful, but to get a bigger picture with more exhaustive results more categories are needed.
 - Climate score is based on yearly averages, not seasonal or even monthly, nevetheless this completely ignores personal preference (depending on the cases: cold > warm).
 - This 560-city database does not factor in the current state of events (wars, political imbalances, epidemics, etc.).
