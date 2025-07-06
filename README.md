@@ -1,4 +1,4 @@
-# Where-to-next
+# Where to next
 
 <table>
   <tr>
@@ -9,14 +9,12 @@
 
 ## A Travel Destination Analysis
 
-Choosing where to travel involves trade-offs: How expensive is it? Will the weather be decent? Will I actually enjoy it?
-
-This project uses Principal Component Analysis (PCA) to cut through the noise and mathematically rank over 100 global cities using three essential travel criteria:
-	•	Budget – average cost of lodging, food, and transportation
-	•	Ratings – traveler satisfaction across attractions, safety, and experience
-	•	Climate – average weather conditions, variability, and seasonal comfort
-
-PCA reduces this multi-dimensional data into a simpler form, allowing us to rank cities not just subjectively—but statistically
+Picking the right travel destination is a tough process that involves balancing multiple different factors. 
+This project uses Principal Component Analysis (PCA) and data visualisation to objectively rank over 500 global cities using three essential travel criteria:
+- Budget – average cost for the trip
+- Climate – average temperature over the year
+- Ratings – traveler satisfaction scores across multiple categories
+PCA reduces this multi-dimensional data into a simpler form, in oder to statistically rank cities through a balance of all factors. 
 
 
 ## Data Overview
@@ -25,14 +23,9 @@ PCA reduces this multi-dimensional data into a simpler form, allowing us to rank
 
 The dataset aggregates public data from a travel review [website](https://www.kaggle.com/datasets/furkanima/worldwide-travel-cities-ratings-and-climate).
 
-### Initial Data Checks
+### Data Cleaning & Exploration
 
-- Missing values were found in climate data for a few cities—these were imputed using regional averages.
-- City names were standardized to avoid duplicates due to misspellings.
-
-### Data Cleaning & Formatting
-
-Python scripts were used for data wrangling and PCA transformation.
+.json files were made into columns and non-existing countries were added to existing ones ([python code](code/cities_cleaning.py)), then [data exploration](code/cities_exploration.ipynb) was carried out for dataset familiarization purposes.
 
 ### Data Structure
 
