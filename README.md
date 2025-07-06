@@ -40,29 +40,29 @@ The final dataset is stuctured as follows:
 Visualizations were created in Tableau Public, accessible here.
 
 ### Data Limitations
-- No visa/travel restriction data included
-- No local event seasonality
-- Data reflects average values, not peak/off-peak variance
+- No travel restrictions or visa related issues
+- Data is limited to yearly temperatures, it does not consider seasonality
+- Ratings categories are arbitrary do not account for each singular travelers' preferences
 
 
 ## Key Questions
 
-This project is structured around three main questions:
-	1.	Which cities rank highest overall when budget, ratings, and climate are considered together?
-	2.	What characteristics do bottom-ranked cities share?
-	3.	Can PCA reveal clusters of similar travel destinations?
+1.	Which cities rank highest and lowest overall when budget, ratings, and climate are considered together?
+2.	What characteristics do top-ranked cities share?
+3.	What characteristics do bottom-ranked cities share?
 
 
 ## Key Findings
 
 The PCA transformation revealed clear patterns among global travel destinations:
-	•	Top 10 Cities:
-	•	Destinations like Sydney, Florianópolis, Crete, and Funchal stood out for combining excellent traveler ratings with strong climate scores.
-	•	Notably, all top cities had the lowest possible budget score (1–2), meaning they are among the most affordable in the dataset.
-	•	Climate and ratings both played a key role: nearly all top cities scored 8 or higher in climate, while holding ratings > 3.6.
-	•	Bottom 10 Cities:
-	•	Cities such as Naypyidaw, Phnom Penh, Dhaka, and El Chaltén scored low due to poor climate (scores 1–4) and low traveler satisfaction.
-	•	Many bottom-ranked cities had the highest budget score (3), signaling low cost, but this wasn’t enough to compensate for unfavorable weather or mediocre reviews.
+- Top 10 Cities:
+	- Highest-rated travel destinations stood out for combining excellent traveler ratings with strong climate scores.
+    	- Notably most of the top-rated cities fall into the most expensive budget level, but they make up for it with excellent weather while holding ratings > 3.6.
+
+- Bottom 10 Cities:
+	- Bottom 10 cities scored low due to poor climate (scores 1–5) and low traveler satisfaction.
+	- Many bottom-ranked cities had the highest budget score (3), signaling low cost, but this wasn’t enough to compensate for unfavorable weather or mediocre reviews.
+ 
 | Rank | City             |   Score   | Budget        | Climate        | Ratings        |
 |------|------------------|-----------|---------------|----------------|----------------|
 | 1    | Sydney           | +3.98     | 1             | 8              | 3.89           |
@@ -87,23 +87,14 @@ The PCA transformation revealed clear patterns among global travel destinations:
 | 559  | Phnom Penh       | –4.11     | 3             | 1              | 2.67           |
 | 560  | Naypyidaw        | –4.66     | 3             | 4              | 2.11           |
 
-Cost is important—but only when combined with comfort and enjoyment. Cities like Sydney and Crete offer that rare trifecta: affordable, scenic, and highly rated.
+> Cost is important—but only when combined with comfort and enjoyment.
 
-Additional insights:
-	•	Climate score was a dominant factor in both top and bottom rankings.
-	•	All bottom-10 cities had a climate score ≤ 5, while top-10 cities scored ≥ 8.
-	•	High ratings alone were not enough if paired with poor weather or high costs.
+> Climate score was a dominant factor for these rankings (bottom-10 climate score ≤ 5, top-10 climate score ≥ 8).
 
-
-## Recommendations
-- For travelers: Use PCA-style logic—don’t just chase famous destinations. Cities with balance across cost, weather, and ratings offer the most value.
-- For tourism boards: Improve climate-friendly infrastructure and value-perception to climb rankings.
-- For data nerds: PCA is a powerful tool for reducing complexity. Use it where trade-offs exist across competing variables.
-
-On a microscopic level, travel is deeply personal. But on a macroscopic level, data can highlight which places are objectively better choices for the average traveler.
+> On a microscopic level, travel is deeply personal. But on a macroscopic level, data can suggest objectively better travel destinations overall.
 
 
 ## Assumptions and Caveats
-Climate comfort is based on averages, not personal preference (e.g., some people like winter).
-Rating data may be skewed toward English-speaking travelers.
-Real-time changes (war, pandemic, political unrest) are not factored in.
+- 3-Factor PCA is useful, but to get a bigger picture with more exhaustive results, more categories are needed.
+- Climate score is based on yearly averages, not seasonal or even monthly, nevetheless this completely ignores personal preference (depending on the cases: cold > warm).
+- This 560-city database does not factor in the current state of events (wars, political imbalances, epidemics, etc.).
