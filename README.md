@@ -18,9 +18,9 @@ PCA reduces this multi-dimensional dataset into two quantifiable variables, in o
 
 The dataset aggregates public data from a travel review [website](https://www.kaggle.com/datasets/furkanima/worldwide-travel-cities-ratings-and-climate).
 
-### Data Cleaning & Exploration
+### Data Cleaning & Preparation
 
-.json files were made into columns and non-existing countries were added to existing ones ([python code](code/cities_cleaning.py)), then [data exploration](code/cities_exploration.ipynb) was carried out for dataset familiarization purposes.
+.json files were made into columns and non-existing countries were added to existing ones ([python code](code/cities_cleaning.py)), then [data exploration](code/cities_exploration.ipynb) was carried out for dataset familiarization purposes. Ultimately, data preparation for visualization was conducted in [python](code/cities_preparation.py).
 
 ### Data Structure
 
