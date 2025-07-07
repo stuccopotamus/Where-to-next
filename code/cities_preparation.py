@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
@@ -60,6 +59,11 @@ df['pca_2'] = pca_result[:, 1]
 
 # formula for combined PCAs
 df['pca_score'] = df['pca_2'] - df['pca_1']
+
+# convert latitude and longitude columns to numeric and round to 7
+# due to messed up CSV reading in Tableau
+df['latitude'] = pd.to_numeric(df['latitude'], errors='coerce').round(7)
+df['longitude'] = pd.to_numeric(df['longitude'], errors='coerce').round(7)
 
 # set final dataset structure
 city_description = df[['id', 'city', 'country', 'region', 'short_description', 'latitude',
