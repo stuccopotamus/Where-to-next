@@ -71,8 +71,7 @@ city_temperatures = df[['id', 'avg_temp_month_1', 'avg_temp_month_2', 'avg_temp_
                         'avg_temp_month_7', 'avg_temp_month_8', 'avg_temp_month_9',
                         'avg_temp_month_10', 'avg_temp_month_11', 'avg_temp_month_12']]
 
-city_ratings = df[['id', 'culture', 'adventure', 'nature', 'beaches', 'nightlife',
-                   'cuisine', 'wellness', 'urban', 'seclusion']]
+city_ratings = df[['id', 'adventure', 'beaches', 'cuisine', 'culture', 'nature', 'nightlife', 'seclusion', 'urban', 'wellness']]
 
 # save CSV files
 city_description.to_csv('city_description.csv', index=False)
