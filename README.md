@@ -26,7 +26,7 @@ The dataset aggregates public data from a travel review [website](https://www.ka
 
 The final dataset is stuctured as follows:
 
-  <img src="pictures/db_cities.jpg" alt="db_cities">
+  <img src="pictures/" alt="db_cities">
 
 
 
