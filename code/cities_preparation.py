@@ -60,6 +60,12 @@ df['pca_2'] = pca_result[:, 1]
 # formula for combined PCAs
 df['pca_score'] = df['pca_2'] - df['pca_1']
 
+# add global ranking column
+df['global_rank'] = df['pca_score'].rank(method='dense', ascending=False).astype(int)
+
+# add country-specific ranking column
+df['country_rank'] = df.groupby('country')['pca_score'].rank(method='dense', ascending=False).astype(int)
+
 # convert latitude and longitude columns to numeric and round to 7
 # due to messed up CSV reading in Tableau
 df['latitude'] = pd.to_numeric(df['latitude'], errors='coerce').round(7)
@@ -77,7 +83,10 @@ city_temperatures = df[['id', 'avg_temp_month_1', 'avg_temp_month_2', 'avg_temp_
 
 city_ratings = df[['id', 'adventure', 'beaches', 'cuisine', 'culture', 'nature', 'nightlife', 'seclusion', 'urban', 'wellness']]
 
+city_ranking = df[['id', 'global_rank', 'country_rank']]
+
 # save CSV files
 city_description.to_csv('city_description.csv', index=False)
 city_temperatures.to_csv('city_temperatures.csv', index=False)
 city_ratings.to_csv('city_ratings.csv', index=False)
+city_ranking.to_csv('city_ranking.csv', index=False)
