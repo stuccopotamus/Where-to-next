@@ -96,5 +96,6 @@ The [PCA](code/cities_pca.ipynb) transformation revealed clear patterns among gl
 
 ## Assumptions and Caveats
 - 3-Factor PCA is useful, but to get a bigger picture with more exhaustive results more categories are needed.
+- The ratings system is clearly biased towards the activities within the 9 categories, plus ratings are subjective.
 - Climate score is based on yearly averages, not seasonal or even monthly, nevetheless this completely ignores personal preference (depending on the cases: cold > warm).
 - This 560-city database does not factor in the current state of events (wars, political imbalances, epidemics, etc.).
