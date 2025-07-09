@@ -54,7 +54,7 @@ Visualizations were created in Tableau Public, accessible [here](https://public.
 
 ## Key Findings
 
-The PCA transformation revealed clear patterns among global travel destinations:
+The [PCA](code/cities_pca.ipynb) transformation revealed clear patterns among global travel destinations:
 - Top 10 Cities:
 	- Highest-rated travel destinations stood out for combining excellent traveler ratings with strong climate scores.
 	- Notably most of the top-rated cities fall into the most expensive budget level, but they make up for it with excellent weather while holding ratings > 3.6.
