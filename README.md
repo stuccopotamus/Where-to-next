@@ -31,15 +31,13 @@ The dataset aggregates public data from a travel review [website](https://www.ka
 
 ### Data Structure
 
-The final dataset is stuctured as follows:
-
   <img src="pictures/cities_db.jpg" alt="db_cities">
 
 
 
 ### Data Visualization
 
-Visualizations were created in Tableau Public, accessible here.
+Visualizations were created in Tableau Public, accessible [here](https://public.tableau.com/app/profile/luca.stucchi/viz/travel_destinations_v2/Intro).
 
 ### Data Limitations
 - No travel restrictions or visa related issues
