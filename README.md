@@ -1,5 +1,12 @@
 # Where to next?
 
+<table>
+  <tr>
+    <td><img src="pictures/intro.jpg" alt="intro" width="400"/></td>
+    <td><img src="pictures/city_dashboard.jpg" alt="city dashboard" width="400"/></td>
+  </tr>
+</table>
+
 ## A Travel Destination Analysis
 
 Picking the right travel destination is a tough process that involves balancing multiple different factors. 
